@@ -8,57 +8,69 @@
 1. RTOS_Lab1（uC/OS-II）
 	主題：RMS 排程實作、事件紀錄（Preempt/Complete）、deadline 偵測。
 	內容：修改核心與應用層，於 DOSBox 驗證 Set1/Set2 事件序列，並整理到板子遷移版本。
-	產出：可正常執行的 DOSBox 版本程式，以及成功遷移到板子的程式版本 和 實作紀錄。
+	目前狀態：已完成。
+	產出：可正常執行的 DOSBox 版本程式，以及成功遷移到板子的程式版本和實作紀錄。
 
 2. RTOS_Lab2（uC/OS-II）
-	主題：uC/OS-II 進階機制與時序行為分析。
-	預計重點：任務協調、同步物件、核心路徑觀察。
-	產出：實作碼、測試案例、問題分析與修正紀錄。
+	目前狀態：僅確認使用板子，實作內容尚未確定。
+	備註：待課程進度與作業說明公布後補齊主題與產出。
 
 3. RTOS_Lab3（uC/OS-II）
-	主題：uC/OS-II 綜合實驗與效能/穩定性觀察。
-	預計重點：較複雜任務情境下的排程與時間正確性。
-	產出：完整驗證紀錄、效能觀察與比較說明。
+	目前狀態：僅確認使用板子，實作內容尚未確定。
+	備註：待課程進度與作業說明公布後補齊主題與產出。
 
 4. RTOS_Lab4（FreeRTOS）
-	主題：FreeRTOS 基礎任務管理與同步機制。
-	預計重點：Task、Queue、Semaphore 等機制整合。
-	產出：程式碼、執行結果、設計決策說明。
+	目前狀態：僅確認使用板子，實作內容尚未確定。
+	備註：待課程進度與作業說明公布後補齊主題與產出。
 
 5. RTOS_Lab5（FreeRTOS）
-	主題：FreeRTOS 進階整合與系統化驗證。
-	預計重點：多模組整合、可維護性、可重現流程。
-	產出：最終整合報告、操作步驟、結果分析。
+	目前狀態：僅確認使用板子，實作內容尚未確定。
+	備註：待課程進度與作業說明公布後補齊主題與產出。
 
 ## 倉庫結構
 
-1. RTOS_Lab1：已完成並持續補強的 Lab1 成果
-2. RTOS_Lab2：Lab2 工作區
-3. RTOS_Lab3：Lab3 工作區
-4. RTOS_Lab4：Lab4 工作區
-5. RTOS_Lab5：Lab5 工作區
+```text
+RTOS_LAB/
+├─ README.md
+├─ .gitignore
+├─ RTOS_Lab1/
+│  ├─ Lab1_Requirements.md
+│  ├─ Implementation_Log.md
+│  ├─ REPORT.md
+│  ├─ Board_Migration_Log.md
+│  ├─ Lab1_code/
+│  │  ├─ SOFTWARE/
+│  │  └─ bc45/
+│  └─ NIOS2_Board_Migration_Package/
+│     ├─ MIGRATION_STEPS.md
+│     ├─ reference/
+│     ├─ to_test/
+│     └─ to_test_bsp/
+├─ RTOS_Lab2/
+│  └─ README.md
+├─ RTOS_Lab3/
+│  └─ README.md
+├─ RTOS_Lab4/
+│  └─ README.md
+└─ RTOS_Lab5/
+   └─ README.md
+```
 
-## 每次更新會包含什麼
+1. RTOS_Lab1（已完成）
+   - Lab1_Requirements.md：作業需求與驗收條件。
+   - Implementation_Log.md：實作過程、問題與修正紀錄。
+   - REPORT.md：最終流程、結果與分析。
+   - Board_Migration_Log.md：DOSBox 到板端移植差異與修正說明。
+   - Lab1_code/SOFTWARE：原始實驗程式與 uC/OS-II 相關內容。
+   - Lab1_code/bc45：Borland C 4.5 工具鏈相關資源。
+   - NIOS2_Board_Migration_Package：板端移植程式、BSP、參考檔與步驟文件。
 
-每次提交盡量回答三件事：
+2. RTOS_Lab2 ~ RTOS_Lab5（規劃中）
+   - 目前各資料夾先保留 README.md。
+   - 已確認使用板子，詳細題目與實作內容待課程公布後補上。
 
-1. 改了什麼（What changed）
-2. 為什麼要改（Why）
-3. 怎麼驗證（How verified）
+## 根目錄檔案用途
 
-建議提交訊息格式：
+1. .gitignore：版本控制忽略規則。
+2. README.md：整學期倉庫導覽與狀態說明（本文件）。
 
-1. feat(labX): 新增功能或機制
-2. fix(labX): 修正時序/邏輯/同步問題
-3. docs(labX): 補充操作、驗證與分析文件
-
-## 求職作品集定位
-
-這個倉庫不只放作業，而是展示以下能力：
-
-1. RTOS 核心層理解與修改能力
-2. 即時系統時序與 deadline 驗證能力
-3. 從模擬環境到實機平台的遷移能力
-4. 工程化紀錄與版本管理能力
-
-如果你是面試官，從這份倉庫可以直接看到：我不只會寫程式，也能定義問題、驗證結果、並把系統做成可交付成果。
