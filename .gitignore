@@ -1,0 +1,30 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+
+# IDE
+.vscode/
+.idea/
+
+# Build artifacts
+*.obj
+*.o
+*.exe
+*.map
+*.ilk
+*.pdb
+*.bak
+*.log
+*.out
+
+# DOS/Borland artifacts
+*.dsk
+*.pif
+**/OBJ/
+**/obj/
+**/WORK/
+
+# Keep source/docs; ignore local compiler binary bundles
+**/bc45/BIN/
