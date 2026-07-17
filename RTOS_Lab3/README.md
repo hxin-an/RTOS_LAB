@@ -1,6 +1,7 @@
 # RTOS Lab3
 
-Status: planned
-Platform: uC/OS-II
+## Authorship Notice
 
-Add lab requirements, implementation log, and report files here when Lab3 starts.
+Lab3 was completed by another person. The repository owner did not implement this lab, and it is intentionally excluded from the portfolio highlights.
+
+No Lab3 implementation or result is claimed here.

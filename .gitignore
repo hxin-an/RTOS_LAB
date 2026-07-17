@@ -28,3 +28,6 @@ Thumbs.db
 
 # Keep source/docs; ignore local compiler binary bundles
 **/bc45/BIN/
+
+# Local research and extraction scratch files
+RTOS_Checkpoint/
