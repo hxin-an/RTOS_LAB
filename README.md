@@ -4,7 +4,7 @@ Coursework and implementation notes from the NYCU Embedded Real-Time Operating S
 
 ## Portfolio Scope
 
-The repository owner's work is documented in **Lab1, Lab2, Lab4, and Lab5**.
+The work is documented in **Lab1, Lab2, Lab4, and Lab5**.
 
 > **Authorship note:** Lab3 was completed by another person. It is not presented or claimed as part of this portfolio.
 
